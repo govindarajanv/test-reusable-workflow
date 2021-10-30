@@ -9,10 +9,15 @@ on:
 jobs:
   build-ubuntu:
     name: Build app on Ubuntu
-    uses: govindarajanv/reusable-workflows/.github/workflows/dotnetbuild.yml@main
+    uses: govindarajanv/reusable-workflows/.github/workflows/dotnetbuild.yml@feature
     with:
       runs-on: ubuntu-latest
       run-tests: false
       project-folder: src
+      release_branch: main  
       artifact-name: drop-ubuntu
+      is_dockerized: true
+      require_helm: true
+      require_qa_deploy: true
+      run_test_on_qa_deploy: true
 
