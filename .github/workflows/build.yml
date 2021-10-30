@@ -17,7 +17,7 @@ jobs:
       release_branch: main  
       artifact-name: drop-ubuntu
       is_dockerized: true
-      require_helm: true
+      require-helm: true
       require_qa_deploy: true
       run_test_on_qa_deploy: true
 
