@@ -9,7 +9,7 @@ on:
 jobs:
   build-ubuntu:
     name: Build app on Ubuntu
-    uses: govindarajanv/reusable-workflows/.github/workflows/dotnetbuild.yml@feature
+    uses: govindarajanv/reusable-workflows/.github/workflows/dotnetbuild.yml@main
     with:
       runs-on: ubuntu-latest
       run-tests: false
