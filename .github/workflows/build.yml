@@ -12,4 +12,3 @@ jobs:
     uses: govindarajanv/reusable-workflows/.github/workflows/dotnetbuild.yml@main
     with:
       release-branches: "main,develop"
-
