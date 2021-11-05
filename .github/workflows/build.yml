@@ -11,4 +11,5 @@ jobs:
     name: Build app on Ubuntu
     uses: govindarajanv/reusable-workflows/.github/workflows/dotnetbuild.yml@main
     with:
-      release-branches: "main,develop"
+ #    release-branches: "main,develop"
+      runs-on: ubuntu-latest
